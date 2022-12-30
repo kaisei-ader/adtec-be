@@ -1,0 +1,148 @@
+@charset "UTF-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+a:focus {
+  outline: none;
+}
+
+a {
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+/* フォーム初期化 */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+  font-size: calc(16px + 2 * (100vw - 320px) / 1046);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 1366px) {
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 18px;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}

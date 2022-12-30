@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+/* ======================================================================================================================== */
+/* 共通部分 */
+/* ======================================================================================================================== */
+/* フォントサイズ */
+.f12 {
+  font-size: 12px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1046);
+}
+.f18 {
+  font-size: calc(16px + 2 * (100vw - 320px) / 1046);
+}
+.f20 {
+  font-size: calc(18px + 2 * (100vw - 320px) / 1046);
+}
+.f22 {
+  font-size: calc(20px + 2 * (100vw - 320px) / 1046);
+}
+.f24 {
+  font-size: calc(20px + 4 * (100vw - 320px) / 1046);
+}
+.f26 {
+  font-size: calc(22px + 4 * (100vw - 320px) / 1046);
+}
+.f28 {
+  font-size: calc(22px + 6 * (100vw - 320px) / 1046);
+}
+.f30 {
+  font-size: calc(22px + 8 * (100vw - 320px) / 1046);
+}
+.f32 {
+  font-size: calc(22px + 10 * (100vw - 320px) / 1046);
+}
+.f36 {
+  font-size: calc(22px + 14 * (100vw - 320px) / 1046);
+}
+.f40 {
+  font-size: calc(25px + 15 * (100vw - 320px) / 1046);
+}
+@media screen and (min-width: 1366px) {
+  .f16 {
+    font-size: 16px;
+  }
+  .f18 {
+    font-size: 18px;
+  }
+  .f20 {
+    font-size: 20px;
+  }
+  .f22 {
+    font-size: 22px;
+  }
+  .f24 {
+    font-size: 24px;
+  }
+  .f26 {
+    font-size: 26px;
+  }
+  .f28 {
+    font-size: 28px;
+  }
+  .f30 {
+    font-size: 30px;
+  }
+  .f32 {
+    font-size: 32px;
+  }
+  .f36 {
+    font-size: 36px;
+  }
+  .f40 {
+    font-size: 40px;
+  }
+}
+
+/* フォントファミリー */
+
+/* Noto Sans CJK JP */
+.NotoSans_r {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.NotoSans_m {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.NotoSans_b {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* フォントカラー */
+.c_white {
+  color: #ffffff;
+}
+
+.c_black {
+  color: #000000;
+}
+
+/* フォントウェイト */
+.font_r {
+  font-weight: 300;
+}
+
+.font_m {
+  font-weight: 500;
+}
+
+.font_b {
+  font-weight: bold;
+}
+
+/* line-height */
+.line_1 {
+  line-height: 1;
+}
+.line_125 {
+  line-height: 1.25;
+}
+.line_15 {
+  line-height: 1.5;
+}
+.line_175 {
+  line-height: 1.75;
+}
+.line_2 {
+  line-height: 2;
+}
+
+/* 表示非表示 */
+.on480 {
+  display: none;
+}
+.off480 {
+  display: block;
+}
+@media screen and (max-width: 480px) {
+  .on480 {
+    display: block;
+  }
+  .off480 {
+    display: none;
+  }
+}
+
+.on768 {
+  display: none;
+}
+.off768 {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .on768 {
+    display: block;
+  }
+  .off768 {
+    display: none;
+  }
+}
+
+/* aタグ */
+a {
+  transition: all 0.5s;
+  cursor: pointer;
+  display: block;
+}
+
+a.opa:hover {
+  opacity: 0.7;
+}
+
+/* text-align */
+.TxtCenter {
+  text-align: center;
+}
+.TxtRight {
+  text-align: right;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignBase {
+  align-items: baseline;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+/* ======================================================================================================================== */
+/* body */
+/* ======================================================================================================================== */
+body {
+  color: #000000;
+  font-style: normal;
+  overflow-x: hidden;
+  letter-spacing: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body.show {
+  overflow-y: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html.show {
+  overflow-y: hidden;
+}
+
+main {
+  position: relative;
+}
