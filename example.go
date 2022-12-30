@@ -18,7 +18,7 @@ func main() {
 	// db := dbInit()
 	// db.AutoMigrate(&AdminUser{})
 	r := gin.Default()
-	r.LoadHTMLGlob("./views/index.html")
+	r.LoadHTMLGlob("./views/pages/index.html")
 	r.GET("/", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{})
 	})
