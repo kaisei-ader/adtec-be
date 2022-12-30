@@ -17,12 +17,13 @@ type AdminUser struct {
 func main() {
 	// db := dbInit()
 	// db.AutoMigrate(&AdminUser{})
-	r := gin.Default()
-	r.LoadHTMLGlob("./views/pages/index.html")
-	r.GET("/", func(ctx *gin.Context) {
+	router := gin.Default()
+	router.Static("/assets", "./assets/css")
+	router.LoadHTMLGlob("./template/index.html")
+	router.GET("/", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{})
 	})
-	r.Run(":8080")
+	router.Run(":8080")
 }
 
 // func dbInit() *gorm.DB {
