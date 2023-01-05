@@ -18,7 +18,7 @@ func main() {
 	// db := dbInit()
 	// db.AutoMigrate(&AdminUser{})
 	router := gin.Default()
-	router.Static("/assets", "./assets/css")
+	router.Static("/assets", "./assets")
 	router.LoadHTMLGlob("./template/index.html")
 	router.GET("/", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{})
